@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head><center><h1><font color="white">calculator</font></h1></center>
+
+<style>
+   
+   body{
+      background-color: #862323;
+      font-family: monospace;
+      
+
+   }
+   table{
+      border: 3px solid black;
+      
+      background-color:#d14d4d;
+
+   }
+   input[type="text"]{
+      border: 1px solid white;
+      padding: 10px 30px 10px 15px;
+      border-radius: 14px;
+      font-size: 15px;
+   }
+   input[type="text"]:hover{
+      background-color: #c73333;
+
+   }
+   button{
+      padding: 8px 30px 8px 30px;
+      font-size: 14px;
+      margin: 0px 0px 13px 60px;
+      border: 2px solid white;
+      border-radius: 17px;
+
+
+   }
+   button:hover{
+      background-color: #c73333 ;
+
+   }
+   .p1{
+      font-family: cursive;
+      color: white;
+   }
+
+
+
+</style>
+
+
+
+</head>
+<body><center><table border="1" width="100%">
+       <tr>
+          <td>
+       <h1><font color="white">addtion</font></h1>
+<h1 id="answer"></h1>
+<h1>(+)</h1>
+<input type="text" id="num1" placeholder="num1"> 
+<br>
+<br>
+<input type="text" id="num2" placeholder="num2"> 
+<br>
+<br>
+<button onclick="calculate()"><font color="black">calculate</font></button>
+</td>
+<td>
+<h1><font color="white">subtraction</font></h1>
+<h1>(-)</h1>
+<h1 id="answe"></h1>
+<input type="text" id="num3" placeholder="num1">
+<br>
+<br>
+<input type="text" id="num4" placeholder="num1"> 
+<br>
+<br>
+<button onclick="calculate()"><font color="black">calculate</font></button>
+
+</td>
+<td>
+<h1><font color="white">dividing</font></h1>
+<h1>(/)</h1>
+<h1 id="answ"></h1>
+<input type="text" id="num5" placeholder="num1">
+<br>
+<br>
+<input type="text" id="num6" placeholder="num1">
+<br>
+<br>
+<button onclick="calculate()"><font color="black">calculate</font></button>
+</td>
+<td>
+<h1><font color="white">multiply</font></h1>
+<h1>(*)</h1>
+<h1 id="ans"></h1>
+<input type="text" id="num7" placeholder="num1">
+<br>
+<br>
+<input type="text" id="num8" placeholder="num1">
+<br>
+<br>
+<button onclick="calculate()"><font color="black">calculate</font></button>
+</td>
+</tr>
+</table></center>
+
+
+
+
+
+<script>
+//var name=prompt("hello !wellcome to my Calculator and enter your name","");
+//document.write(name);
+function calculate()
+{
+ var field1=document.getElementById("num1").value;
+ var field2=document.getElementById("num2").value;
+ var result=parseFloat(field1)+parseFloat(field2);
+     if(!isNaN(result))
+       {
+     document.getElementById("answer").innerHTML="The answer is="+result;
+
+      }
+
+ var a=document.getElementById("num3").value;
+ var b=document.getElementById("num4").value;
+ var c=parseFloat(a)-parseFloat(b);
+    if(!isNaN(c))
+    {
+    document.getElementById("answe").innerHTML="The answer is="+c;
+    }
+
+
+
+
+   var d=document.getElementById("num5").value;
+ var e=document.getElementById("num6").value;
+ var f=parseFloat(d)/parseFloat(e);
+    if(!isNaN(f))
+    {
+    document.getElementById("answ").innerHTML="The answer is="+f;
+    }
+
+   var g=document.getElementById("num7").value;
+ var h=document.getElementById("num8").value;
+ var i=parseFloat(g)*parseFloat(h);
+    if(!isNaN(i))
+    {
+    document.getElementById("ans").innerHTML="The answer is="+i;
+    }
+
+
+}
+
+
+
+</script>
+<p class="p1">Created by Chathuranga_Ranasinghe</p>
+</body>
+
+
+</html>
+
+
+
+
+
+
